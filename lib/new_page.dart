@@ -1,8 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'activation_page.dart';
 
 class NewPage extends StatelessWidget {
+  const NewPage({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -10,16 +11,16 @@ class NewPage extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            SizedBox(height: 40.0),
+            const SizedBox(height: 40.0),
             Image.asset('images/upm_logo.png'),
-            SizedBox(height: 40.0),
-            Text(
+            const SizedBox(height: 40.0),
+            const Text(
               'Welcome!',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 38),
             ),
             Container(
 
-                padding: EdgeInsets.all(20.0),
+                padding: const EdgeInsets.all(20.0),
                 decoration: BoxDecoration(
                   color: Colors.pink[50],
 
@@ -27,15 +28,15 @@ class NewPage extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                  Text('Enter your mobiel number to activate your account'),
-                  SizedBox(height: 20,),
+                  const Text('Enter your mobiel number to activate your account'),
+                  const SizedBox(height: 20,),
 
                   Row(
 
                     children: [
                     Image.asset('images/malaysia.png'),
-                      Text('+60'),
-                      Expanded(child: TextField(
+                      const Text('+60'),
+                      const Expanded(child: TextField(
                         decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           hintText: 'Enter your mobile number',
@@ -52,7 +53,7 @@ class NewPage extends StatelessWidget {
                           MaterialPageRoute(builder: (context) => ActivationPage()),
                         );
                       },
-                      child: Text('Go to Activation Page'),
+                      child: const Text('Go to Activation Page'),
                     ),
                 ],)
             )
