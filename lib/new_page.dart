@@ -28,7 +28,7 @@ class NewPage extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                  const Text('Enter your mobiel number to activate your account'),
+                  const Text('Enter your mobile number to activate your account'),
                   const SizedBox(height: 20,),
 
                   Row(
@@ -50,7 +50,7 @@ class NewPage extends StatelessWidget {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => ActivationPage()),
+                          MaterialPageRoute(builder: (context) => const ActivationPage()),
                         );
                       },
                       child: const Text('Go to Activation Page'),
